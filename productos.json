@@ -1,0 +1,98 @@
+[
+  {
+      "id":"001",
+      "nombre":"Funko Cersei ",
+      "precio":8000,
+      "img":"imagenes/2.jpg"
+      
+  },
+  {
+      "id":"002",
+      "nombre":"Funko Grogu ",
+      "precio":5500,
+      "img":"imagenes/2.jpg"
+      
+  },
+  {
+      "id":"003",
+      "nombre":"Funko Captain America",
+      "precio":6000,
+      "img":"imagenes/3.jpg"
+      
+  },
+  {
+      "id":"004",
+      "nombre":"Funko trunks",
+      "precio":6500,
+      "img":"imagenes/4.png"
+      
+  },
+  {
+      "id":"005",
+      "nombre":"Funko Blue Ranger",
+      "precio":8000,
+      "img":"imagenes/5.jpeg"
+      
+  },
+  {
+      "id":"006",
+      "nombre":"Funko Vegeta con huevos",
+      "precio":6000,
+      "img":"imagenes/6.jpg"
+      
+  },
+  {
+      "id":"007",
+      "nombre":"Funko Vegeta entrenamiento",
+      "precio":13000,
+      "img":"imagenes/7.jpg"
+      
+  },
+  {
+      "id":"008",
+      "nombre":"Funko Super satan",
+      "precio":9000,
+      "img":"imagenes/8.jpg"
+      
+  },
+  {
+      "id":"009",
+      "nombre":"Funko Super kefla",
+      "precio":8900,
+      "img":"imagenes/9.jpg"
+      
+  },
+     {
+      "id":"010",
+      "nombre":"Funko Iron man destrozado",
+      "precio":4500,
+      "img":"imagenes/iron.png"
+      
+  },
+  {
+      "id":"011",
+      "nombre":"Funko Iron man completo",
+      "precio":1400,
+      "img":"imagenes/iron2.jpg"
+      
+  },
+  {
+      "id":"012",
+      "nombre":"Funko Batman raro",
+      "precio":9000,
+      "img":"imagenes/Funko-Batman.jpg"
+      
+  },
+  {
+      "id":"013",
+      "nombre":"Riuk",
+      "precio":3000,
+      "img":"imagenes/12.jpeg"
+      
+  }
+  
+  
+  
+
+  
+]
