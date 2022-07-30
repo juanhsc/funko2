@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   background-color: rgb(213, 221, 228);
 }
+
 .titulo {
   color: #000000;
   width: 100vw;
@@ -13,6 +15,7 @@ html {
   padding: 30px;
   font-size: 30px;
 }
+
 .navbar {
   height: 90px;
   align-items: center;
@@ -143,10 +146,11 @@ p {
   padding-top: 30px;
 }
 
-.welcome {
+.titulo {
   font-weight: 600;
   margin: 3rem;
   text-align: center;
+  
 }
 
 .grillaContainer {
@@ -244,4 +248,11 @@ th {
     justify-content: space-between;
     grid-template-areas: "card card card";
   }
+}
+
+
+.cuerpoDeFondo{
+  background-image: url("muñecos-funko-pop");
+
+
 }

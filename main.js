@@ -150,14 +150,15 @@ const localFetch = async () => {
     };
 
     Comprar.onclick = (e) => {
-      Swal.fire("Listo!", "GRACIAS POR TU COMPRA", "success")
+      Swal.fire("", "GRACIAS POR TU COMPRA", "success")
       .then((result) => {
         if (result.isConfirmed) {
           e.preventDefault();
           cart = [];
           localStorage.clear();
           const empty = `
-          <h5 class="cartText">El carrito está vacío</h5>
+          <img src="imagenes/camion2.png"class="me-2"height="100"alt="Logo"loading="lazy"/>
+          <h5 class="cartText">Recibiras tu compras en 5 dias habiles</h5>
           `;
           carritoDiv.innerHTML = empty;
           
