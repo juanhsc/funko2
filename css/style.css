@@ -1,266 +1,247 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    background-color: rgb(213, 221, 228);
+html {
+  background-color: rgb(213, 221, 228);
 }
-.titulo{
-    color: #000000;
-    width: 100vw;
-    text-align: center;
-    padding: 30px;
-    font-size: 30px;
+.titulo {
+  color: #000000;
+  width: 100vw;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
 }
-.navbar{
-height: 90px;
-align-items: center;
-justify-content: center;
-padding: 0rem;
+.navbar {
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem;
+  margin-bottom: 1rem;
+  
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.card {
+  max-width: 300px;
+  position: relative;
+  padding: 15px 10px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  background: #326789;
+  box-shadow: 5px 5px 5px rgb(17, 0, 78);
+}
+
+.imgProducto {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+p {
+  color: #99c7ee;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-family: Lato-Black;
+  padding: 10px;
+}
+
+.title {
+  display: flex;
+  height: 80px;
+  padding-top: 1rem;
+  justify-content: center;
+  background-color: #326789;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.nombre {
+  color: rgb(3, 0, 17);
+  font-size: 150%;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btnAgregar {
+  border-radius: 4px;
+  width: 8rem;
+  background-color: #e4e2ee;
+}
+.precio {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.lista {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+.lista {
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+}
+
+.varachicar {
+  height: 50%;
+  margin-bottom: 3rem;
+}
+
+/* CONTAINERS y CARDS */
+#stockContainer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  grid-template-areas: "card card card card";
+  margin-top: 3rem;
+  gap: 2%;
+}
+
+#fondoCarrito {
+  padding: 4rem;
+  margin-top: 100px;
+
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#fondoCarrito i {
+  font-size: 40px;
+  padding: 0 0 50px 1.6em;
+}
+
+.cartText {
+  text-align: center;
+}
+
+.vaciarCarritoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.welcome {
+  font-weight: 600;
+  margin: 3rem;
+  text-align: center;
+}
+
+.grillaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: aliceblue;
+
+}
+.card-body{
+  background-color: #e4e2ee5d;
+ 
+}
+
+table {
+  border-radius: 5px;
+  color: black;
+}
+
+table tr th:first-child {
+  width: 80px;
+}
+
+table tr th:nth-child(2) {
+  width: 300px;
 }
 
 
-#container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    margin: 0 auto;
-    margin-top: 30px;
+thead tr th:first-child {
+  border-radius: 10px 0px 0px 0px;
 }
 
-.card{
-    max-width: 300px;
-    position: relative;
-    padding: 15px 10px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border-radius: 5px;
-    background: #326789;
-    box-shadow: 5px 5px 5px rgb(17, 0, 78);
+thead tr th:last-child {
+  border-radius: 0px 10px 0px 0px;
 }
 
-.imgProducto{
-    position: relative;
-    width: 100%;
-    border-radius: 5px;
-    margin: 5px 0;
+tfoot tr th:first-child {
+  border-radius: 0px 0px 0px 10px;
 }
 
-p{
-    color: #99c7ee;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-family: Lato-Black;
-    padding: 10px;
+tfoot tr th:last-child {
+  border-radius: 0px 0px 10px 0px;
 }
 
-.title{
-   display: flex;
-   height: 80px;
-   padding-top: 1rem;
+th {
+  background: transparent;
+}
+
+.textGrilla {
+  padding: 10px;
+  font-size: 20px;
+}
+
+#form {
+  padding-top: 2%;
+}
+
+#form h3 {
+  margin-bottom: 30px;
+}
+
+#form .formulario {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+.btn-container {
+  display: flex;
+  -webkit-box-pack: center;
    justify-content: center;
-   background-color: #326789;
-   font-size: 50px;
-   color: rgb(255, 255, 255);
-}
-
-.nombre{
-    color: rgb(3, 0, 17);
-    font-size: 150%;
-    
-
-    
-}
-.btn-container{
-    display: flex;
-    justify-content: center;
-}
-.btnAgregar{
-    border-radius: 4px;
-    width: 8rem;
-    background-color: #e4e2ee;
-    
-}
-.precio{
-    font-size: 2rem;
-    color: #000000;
-    
-}
-
-.lista{
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    margin-right: 10px;
-}
-.lista{
-    text-decoration:none;
-    outline: none;
-    color: #000000;
-    
+  padding-top: 30px;
+  padding-bottom: 30px;
 
 }
-
-.varachicar{
-    height: 50%;
-    margin-bottom: 3rem;
+.preciom{
+  color: #000000;
+  font-size: 2rem;
 }
-
-
-
-  
-
-  
-  /* CONTAINERS y CARDS */
+.nombrem{
+  font-size: 10rem;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
   #stockContainer {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-        grid-template-areas: 'card card card card';
-    margin-top: 3rem;
-    gap: 2%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    grid-template-areas: "card card card";
   }
-  
-  #fondoCarrito {
-    padding: 4rem;
-    margin-top: 100px;
-    
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  
-  #fondoCarrito i {
-    font-size: 40px;
-    padding: 0 0 50px 1.6em;
-  }
-  
-  .cartText {
-    text-align: center;
-  }
-  
-  .vaciarCarritoContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 30px;
-  }
-  
-
-  
-  .welcome {
-    font-weight: 600;
-    margin: 3rem;
-    text-align: center;
-  }
-  
-  .grillaContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  
-  table {
-    border-radius: 5px;
-    color: black;
-  }
-  
-  table tr th:first-child {
-    width: 80px;
-  }
-  
-  table tr th:nth-child(2) {
-    width: 300px;
-  }
-  
-  thead tr th {
-   
-    color: #000;
-  }
-  
-  thead tr th:first-child {
-    border-radius: 10px 0px 0px 0px;
-  }
-  
-  thead tr th:last-child {
-    border-radius: 0px 10px 0px 0px;
-  }
-  
-  
-  
- 
-  
-  tfoot tr th:first-child {
-    border-radius: 0px 0px 0px 10px;
-  }
-  
-  tfoot tr th:last-child {
-    border-radius: 0px 0px 10px 0px;
-  }
-  
-  th {
-    background: transparent;
-  }
-  
-  .textGrilla {
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  #form {
-    padding-top: 2%;
-  }
-  
-  #form h3 {
-    margin-bottom: 30px;
-  }
-  
-  #form .formulario {
-    display: -ms-grid;
-    display: grid;
-    gap: 10px;
-  }
-  
-  .btn-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 30px;
-  }
-  
-
-  
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    .site-footer [class^=col-] {
-      margin-bottom: 30px;
-    }
-    #stockContainer {
-      display: -ms-grid;
-      display: grid;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-          grid-template-areas: 'card card card';
-    }
-  }
-  
-
-
-  
- 
-  
-
+}
