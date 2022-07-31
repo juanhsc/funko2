@@ -23,7 +23,7 @@ const localFetch = async () => {
           <img src="${item.img}" class="img-fluid">
           <div class="card-body"
             
-            <h3>${item.nombre}</h3>
+            <h3> <p class="nombreCard">${item.nombre}</p></h3>
             <p class="preciom">$${item.precio.toLocaleString()}</p>
             <div class="btn-container">
             <button class="btn btn-dark btnAgregar" id="${

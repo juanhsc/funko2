@@ -10,7 +10,7 @@ fetch('productos.json')
         row.innerHTML += 
         `<td>${nombre.id}</td>
         <td>${nombre.nombre}</td>
-        <td>${nombre.precio}</td>`;
+        <td>$${nombre.precio}</td>`;
     tabla.appendChild(row);
     });
 })//mostramos la informacion
